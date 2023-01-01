@@ -12,3 +12,11 @@ web-build/
 
 # macOS
 .DS_Store
+
+#ide
+.idea/
+
+#env
+.env.*
+.sentryclirc
+
