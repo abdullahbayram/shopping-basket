@@ -7,8 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "eslint --fix",
-    "format": "prettier --write ."
+    "lint": "eslint --fix .",
+    "format": "prettier --write .",
+    "clean": "rm -rf node_modules && yarn"
   },
   "dependencies": {
     "expo": "~47.0.9",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "eslint": "^8.2.0",
+    "@react-native-community/eslint-config": "^3.2.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-universe": "^11.1.1",
