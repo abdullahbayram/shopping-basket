@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    'jest/globals': true,
+  },
   // make sure put prettier at last(at extends part),
   // so it gets the chance to override other things(https://github.com/prettier/eslint-config-prettier)
   extends: [
@@ -8,7 +11,7 @@ module.exports = {
     '@react-native-community',
     'plugin:prettier/recommended',
   ],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'jest'],
   rules: {
     'prettier/prettier': 'error',
     'max-lines': ['error', { max: 100, skipComments: true, skipBlankLines: true }],
@@ -27,5 +30,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error',
     // react-native
     'react-native/no-inline-styles': 'error',
+    // jest
+    'jest/prefer-to-have-length': 'error',
+    'jest/no-disabled-tests': 'warn',
   },
 };
