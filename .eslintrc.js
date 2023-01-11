@@ -12,6 +12,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   plugins: ['prettier', 'jest'],
+  ignorePatterns: ['**/coverage/**'],
   rules: {
     'prettier/prettier': 'error',
     'max-lines': ['error', { max: 100, skipComments: true, skipBlankLines: true }],
