@@ -48,7 +48,7 @@
     "prettier": "^2.8.1"
   },
   "lint-staged": {
-    "./": [
+    "src/**": [
       "yarn validate"
     ]
   },
