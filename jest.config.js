@@ -5,7 +5,7 @@ module.exports = {
     'node_modules/' +
       '(?!((jest-)' +
       '?react-native' +
-      '|@react-native(-community)?)' +
+      '|@react-native(-community)?|@rneui?)' +
       '|expo(nent)?|@expo(nent)?/.*' +
       '|@expo-google-fonts/.*' +
       '|react-navigation' +

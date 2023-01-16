@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "test": "jest",
     "test:coverage": "jest --watch=false --coverage",
-    "validate": "yarn lint && yarn format && yarn test:coverage"
+    "validate": "yarn lint && yarn format && yarn test --collectCoverage=false"
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
