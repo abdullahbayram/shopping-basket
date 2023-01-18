@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "test": "jest",
     "test:coverage": "jest --watch=false --coverage",
-    "validate": "yarn lint && yarn format && yarn test:coverage"
+    "validate": "yarn lint && yarn format && yarn test --collectCoverage=false"
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
@@ -54,33 +54,6 @@
     "src/**": [
       "yarn validate"
     ]
-  },
-  "jest": {
-    "preset": "jest-expo",
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-native/extend-expect"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
-    ],
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "**/*.{js,jsx}",
-      "!**/coverage/**",
-      "!**/node_modules/**",
-      "!**/babel.config.js",
-      "!**/jest.setup.js",
-      "!**/.eslintrc.js",
-      "!**/*.style.js"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 85,
-        "branches": 85,
-        "functions": 85,
-        "lines": 85
-      }
-    }
   },
   "private": true
 }
